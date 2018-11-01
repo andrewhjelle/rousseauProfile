@@ -1,0 +1,112 @@
+/*BODY*/
+* {
+  text-align: center;
+  font-family: sans-serif;
+  color: gray;
+  box-sizing: border-box;
+  	/*animation: color-change-2x 2s linear infinite alternate both;*/
+
+}
+@-webkit-keyframes color-change-2x{
+    0%{background:#19dcea}100%{background:#b22cff}
+}
+@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}
+}
+/*ELEMENTS*/
+h1 {
+  color: black;
+  font-size: 4em;
+  background-color: white;
+  margin: 0 auto;
+  max-width: 80em;
+  /* code in rest of container inspired by: http://www.sketchingwithcss.com/samplechapter/cheatsheet.html */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: black;
+  font-style: italic;
+  font-size: 2em;
+  background-color: white;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+img {
+  border-radius: 50%;
+}
+
+a {
+  font-size: .5em
+}
+
+.caption {
+    font-size: .75em;
+    font-weight: bolder;
+}
+
+/*OVERVIEW*/
+#imgtxtadjacent > div {
+  margin: 0 auto;
+  max-width: 80em;
+  /* code in rest of container inspired by: http://www.sketchingwithcss.com/samplechapter/cheatsheet.html */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#imgtxtadjacent > div > p {
+  max-width: 70%;
+  padding-left: 5%;
+}
+
+/*SELECTED WORKS*/
+#imgcirclecards > div {
+  margin: 0 auto;
+  max-width: 80em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#imgcirclecards > div img {
+    padding: 3%;
+    max-width: 22em;
+    width: 20em;
+    height: 20em;
+}
+
+/*PAINTINGS*/
+#imgwtextoverlay > div {
+  display: flex;
+}
+
+#backgroundimage {
+  width: 100%;
+  max-height: 60em;
+  border-radius: 0%;
+  position: absolute;
+  left:0;
+}
+
+#imgwtextoverlay > div > div:nth-of-type(2) {
+  padding: 3%;
+  position: absolute;
+  background-color: #23261B;
+  opacity: .7;
+  right: 0;
+  border-radius: 1%;
+  max-width: 40em;
+}
+
+#imgwtextoverlay > div > div:nth-of-type(2) > p {
+  color: white;
+  background-color: #23261B;
+}
